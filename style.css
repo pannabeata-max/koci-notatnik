@@ -71,3 +71,109 @@ h1,h2,h3,.brand{color:var(--accent)}
 .story-photo{margin:32px 0 38px}.story-photo img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;aspect-ratio:3/2;object-fit:cover}
 .story-photo figcaption{font-size:12px;color:var(--muted);line-height:1.6;margin-top:10px}
 @media(max-width:750px){.cards{grid-template-columns:1fr}.hero{padding-top:260px}.hero h1{font-size:clamp(40px,8vw,56px)}.card h3{font-size:27px}.hero-signature{max-width:340px}.about h2{font-size:32px}}
+
+/* Prywatny magazyn Jego Mruczności */
+:root{--royal-gold:#d6b578;--royal-pale:#f0dfb8;--royal-edge:#675338}
+.magazine{background:#080808;color:#ddd7cd}
+.magazine .wrap{max-width:1200px}
+.edition-bar{display:flex;justify-content:space-between;gap:16px;padding:10px max(24px,calc((100vw - 1152px)/2));background:#17130e;border-bottom:1px solid #4a3b27;color:#c6aa78;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.magazine-header{background:#0b0b0b;border-bottom:1px solid var(--royal-edge)}
+.masthead{text-align:center;padding-top:40px;padding-bottom:20px}
+.masthead-kicker{display:block;font-size:9px;letter-spacing:2.8px;color:#a68c61}
+.masthead .brand{display:block;font:500 clamp(42px,6vw,76px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-3px;margin-top:12px;color:var(--royal-pale)}
+.masthead .brand span{color:#a18350}
+.masthead p{font:italic 16px/1.6 Georgia,serif;color:#b6a88e;margin:12px 0 18px}
+.ornament{display:block;width:160px;height:27px;color:#ad8951;margin:0 auto;flex-shrink:0}
+.main-nav{display:flex;justify-content:center;gap:0;border-top:1px solid #342a1c;padding-top:0;padding-bottom:0;min-height:57px;align-items:center}
+.main-nav a{padding:18px 26px;font-size:11px;letter-spacing:1.3px;text-transform:uppercase;color:#ded0b8;font-weight:500;position:relative}
+.main-nav a+a::before{content:"◆";position:absolute;left:-3px;color:#8b6e40;font-size:6px;top:24px}
+.main-nav a:hover{color:var(--royal-pale);text-decoration:none;background:#17130d}
+.royal-hero{margin:18px;min-height:650px;padding:82px 0 72px;border:1px solid #76603c;box-shadow:inset 0 0 0 5px #080808,inset 0 0 0 6px #382c1a;isolation:isolate}
+.royal-hero h1{font-size:clamp(44px,5.4vw,70px);max-width:690px;font-weight:400;letter-spacing:-2.5px;color:var(--royal-pale);margin-top:20px}
+.royal-hero .lead{max-width:510px;font-size:18px;line-height:1.85;color:#d7cbb9}
+.royal-hero .eyebrow{font-size:10px;letter-spacing:2.3px}
+.royal-hero .hero-photo img{object-position:70% center}
+.royal-hero::after{background:linear-gradient(90deg,#080808 0%,#080808ed 30%,#0808088c 54%,#08080800 78%),linear-gradient(0deg,#080808a6,transparent 35%)}
+.royal-hero .button{border-radius:0;background:#d4b47c;color:#17120b;font-size:12px;letter-spacing:.7px;padding:15px 23px;max-width:100%;white-space:normal}
+.royal-hero .button:hover{background:#edcf98}
+.hero-signature{font:italic 18px/1.6 Georgia,serif;color:#d2b982;margin-top:30px;max-width:500px}
+.hero-signature span{font:10px/1.7 system-ui,sans-serif;color:#a89c88;letter-spacing:.3px}
+.royal-corner{position:absolute;width:32px;height:32px;border-color:#d2ac65;border-style:solid;z-index:2;pointer-events:none}
+.corner-tl{top:11px;left:11px;border-width:2px 0 0 2px}.corner-tr{top:11px;right:11px;border-width:2px 2px 0 0}.corner-bl{bottom:11px;left:11px;border-width:0 0 2px 2px}.corner-br{bottom:11px;right:11px;border-width:0 2px 2px 0}
+.royal-corner::after{content:"";position:absolute;width:6px;height:6px;border:1px solid #d2ac65;transform:rotate(45deg);top:10px;left:10px}
+.royal-quote{text-align:center;padding-top:64px;padding-bottom:66px}
+.royal-quote blockquote{font:italic clamp(23px,3vw,34px)/1.5 Georgia,serif;color:#e6d8bd;margin:20px 0 24px}
+.magazine-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:50px;padding-bottom:90px;align-items:start}
+.journal{min-width:0;scroll-margin-top:28px}
+.journal .section-head{align-items:flex-end;border-top:1px solid #715837;padding-top:30px;padding-bottom:22px;margin-bottom:0}
+.journal .section-head h2{font-size:clamp(34px,4vw,48px);font-weight:400;margin:12px 0 0;color:#e8d4ab}
+.journal .section-head .small{white-space:nowrap;font-size:11px;padding-bottom:5px;letter-spacing:1px}
+.magazine .eyebrow{font-weight:500;font-size:10px;letter-spacing:2px}
+.journal .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 26px}
+.journal .card{display:flex;background:transparent;border:0;border-radius:0;overflow:visible;box-shadow:none;transition:none}
+.journal .card:hover{transform:none;box-shadow:none}
+.card-image{display:block;overflow:hidden;border:1px solid #5d4a2c;padding:5px;background:#0c0c0c}
+.journal .art{border:0;border-radius:0}
+.journal .card-inner{padding:22px 1px 25px;border-bottom:1px solid #443522;flex:1;display:flex;flex-direction:column}
+.story-category{font:500 9px/1.7 system-ui,sans-serif!important;letter-spacing:1.3px;text-transform:uppercase;color:#b19361!important;margin:0 0 10px!important}
+.journal .card h3{font-size:27px;line-height:1.23;letter-spacing:-.6px;font-weight:400;margin:0 0 14px}
+.journal .card h3 a{text-decoration:none;color:#e4cea4}
+.journal .card h3 a:hover{color:#ffe9bf}
+.journal .card p{font-size:14px;line-height:1.85;color:#b9b2a7}
+.journal .read-story{font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:500;text-decoration:none;padding-top:20px;margin-top:auto;color:#cfac6b}
+.journal .read-story:hover{text-decoration:underline;text-underline-offset:5px}
+.magazine-sidebar{display:flex;flex-direction:column;gap:30px;min-width:0;padding-top:0;scroll-margin-top:25px}
+.author-card{padding:23px 21px 26px;border:1px solid #77603b;background:linear-gradient(140deg,#19150f,#0d0d0d 70%);text-align:center;outline:1px solid #34291b;outline-offset:-6px;scroll-margin-top:24px}
+.author-photo{display:block;width:100%;height:190px;object-fit:cover;object-position:82% 45%;margin:18px auto 17px;filter:saturate(.8)}
+.author-card .ornament{width:120px;height:20px}
+.author-card h2{font-size:30px;font-weight:400;letter-spacing:-.7px;margin:15px 0 8px}
+.author-card p{font-size:13px;line-height:1.85;color:#c1b7a7;text-align:left}
+.author-card .author-title{font:italic 14px/1.7 Georgia,serif;color:#d6bd8f;text-align:center;margin-bottom:20px}
+.text-link{font-size:10px;text-transform:uppercase;letter-spacing:.7px;line-height:1.9;color:#dbbc85;text-decoration:none;display:block;text-align:left;margin-top:22px}
+.text-link:hover{text-decoration:underline;text-underline-offset:4px}
+.sidebar-note{padding:24px 20px;background:#12110e;border-top:1px solid #645034;border-bottom:1px solid #645034}
+.sidebar-note ul{list-style:none;padding:0;margin:18px 0}
+.sidebar-note li{font-size:13px;color:#c9c0af;line-height:1.7;padding:9px 0;border-bottom:1px solid #2d261c}
+.sidebar-note li::before{content:"◆";color:#a48650;font-size:6px;vertical-align:middle;margin-right:10px}
+.sidebar-note .small{font:italic 13px/1.8 Georgia,serif;color:#ab9b81}
+.sidebar-recent h2{font-size:27px;margin:0 0 14px;border-bottom:1px solid #5f4b2e;padding-bottom:13px}
+.sidebar-recent ol{list-style:none;margin:0;padding:0}
+.sidebar-recent li{border-bottom:1px solid #30291f;padding:15px 0}
+.sidebar-recent a{display:block;text-decoration:none;font:17px/1.45 Georgia,serif;color:#dfcba7}
+.sidebar-recent a:hover{color:#ffe6b8}
+.sidebar-recent a span{display:block}
+.sidebar-recent .small{font:9px/1.7 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.8px;color:#a08c69;margin-bottom:7px}
+.gallery-section{border-top:1px solid #80653b;padding-top:52px;padding-bottom:70px;scroll-margin-top:25px}
+.gallery-heading{text-align:center;max-width:650px;margin:0 auto 38px}
+.gallery-heading .ornament{margin-bottom:25px}
+.gallery-heading h2{font-size:clamp(34px,4.5vw,54px);font-weight:400;color:#ead6ad;margin:15px 0 20px}
+.gallery-heading p{font:italic 16px/1.8 Georgia,serif;color:#bcae94}
+.royal-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.royal-gallery figure{margin:0;min-width:0}
+.gallery-open{display:block;position:relative;padding:5px;width:100%;background:#0d0c0a;border:1px solid #665033;color:var(--accent);cursor:zoom-in}
+.gallery-open img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+.gallery-zoom{position:absolute;right:13px;bottom:12px;width:25px;height:25px;line-height:24px;text-align:center;background:#080808bb;border:1px solid #b99860;font-size:17px}
+.gallery-open:hover{border-color:#e2bd7e}
+.royal-gallery figcaption{font:15px/1.5 Georgia,serif;color:#d5c3a5;padding:14px 3px 0}
+.royal-gallery figcaption span{display:block;font:9px/1.7 system-ui,sans-serif;color:#947a52;letter-spacing:1.5px;margin-bottom:5px}
+.gallery-hint{font-size:11px;color:#a29175;text-align:center;margin:29px 0 0}
+.closing-note{max-width:800px!important;text-align:center;padding-top:35px;padding-bottom:80px}
+.closing-note h2{font-size:clamp(31px,4vw,46px);color:#dfc79e;font-weight:400;margin:18px 0 20px}
+.closing-note>p:last-child{font-size:15px;line-height:1.9;color:#b7afa1}
+.royal-footer{border-top:1px solid #5b4629;padding:40px 0;background:#0d0c0a;text-align:center}
+.royal-footer .brand{display:block;font:32px/1.4 Georgia,serif;letter-spacing:-1px;color:#dfc79e;text-decoration:none;margin-top:18px}
+.royal-footer p{font:italic 14px/1.8 Georgia,serif;color:#b8a78b}
+.royal-footer .small{max-width:740px;margin:20px auto 0;font:10px/1.9 system-ui,sans-serif;color:#958b7b}
+.staff-note{margin:36px 0;padding:25px 26px;border:1px solid #6a5130;background:linear-gradient(135deg,#211b12,#101010);outline:1px solid #30271a;outline-offset:-5px}
+.article .staff-note h2{font-size:28px;margin:10px 0 18px;color:#e9d1a4}
+.article .staff-note p,.article .staff-note li{font-size:16px}
+.photo-dialog{width:min(860px,94vw);max-height:94vh;overflow:auto;padding:45px 12px 10px;background:#0c0b09;color:#e7d2ac;border:1px solid #c6a366;border-radius:0;box-shadow:0 25px 90px #000a}
+.photo-dialog::backdrop{background:#000e}
+.photo-dialog img{display:block;width:100%;height:auto;max-height:73vh;object-fit:contain}
+.photo-dialog>p{font:17px/1.6 Georgia,serif;margin:13px 5px 7px;text-align:center}
+.photo-close{position:absolute;right:12px;top:9px;padding:5px 9px;background:transparent;color:#e9d1a7;border:1px solid #69512f;font-size:12px;cursor:pointer}
+@media(min-width:1051px){.magazine-sidebar{position:sticky;top:25px}}
+@media(max-width:1050px){.magazine-layout{grid-template-columns:minmax(0,1fr) 240px;gap:30px}.journal .cards{gap:26px 20px}.journal .card h3{font-size:25px}.author-card{padding:22px 17px}.main-nav a{padding:18px 20px}.royal-gallery{gap:12px}}
+@media(max-width:750px){.edition-bar{padding:9px 18px;justify-content:center;font-size:8px;letter-spacing:1px}.edition-bar span:last-child{display:none}.masthead{padding-top:27px;padding-bottom:14px}.masthead-kicker{font-size:7px;letter-spacing:1.5px}.masthead .brand{font-size:49px;letter-spacing:-2px}.masthead p{font-size:14px;margin:9px 0 12px}.main-nav{gap:0;min-height:0;padding-left:10px;padding-right:10px;flex-wrap:wrap}.main-nav a{padding:13px 12px;font-size:8px;letter-spacing:.7px}.main-nav a+a::before{top:18px;font-size:4px;left:-2px}.royal-hero{margin:10px;min-height:0;padding:325px 0 57px}.royal-hero h1{font-size:clamp(38px,8.5vw,56px);letter-spacing:-1.5px;line-height:1.12;max-width:100%;margin-top:16px}.royal-hero .eyebrow{font-size:8px;letter-spacing:1.3px}.royal-hero .lead{font-size:16px;line-height:1.85;max-width:540px}.royal-hero .hero-photo{height:350px}.royal-hero .hero-photo img{object-position:80% center}.royal-hero::after{background:linear-gradient(180deg,transparent 0px,#0808081a 155px,#080808cc 280px,#080808 340px)}.royal-hero .button{font-size:10px;padding:14px 17px}.hero-signature{font-size:16px;margin-top:26px}.hero-signature span{font-size:9px}.royal-quote{padding-top:42px;padding-bottom:45px}.royal-quote blockquote{font-size:25px}.magazine-layout{grid-template-columns:minmax(0,1fr);gap:45px;padding-bottom:55px}.journal .section-head{flex-direction:row;align-items:flex-end;padding-top:24px;padding-bottom:25px}.journal .section-head h2{font-size:37px}.journal .section-head .small{font-size:9px}.journal .cards{grid-template-columns:1fr;gap:31px}.journal .card h3{font-size:30px}.journal .card p{font-size:15px}.journal .card-inner{padding-top:20px}.journal .read-story{padding-top:20px}.magazine-sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;gap:22px}.author-card{grid-row:span 2}.author-photo{height:170px}.author-card h2{font-size:27px}.sidebar-note{padding:20px 16px}.sidebar-recent h2{font-size:24px}.sidebar-recent a{font-size:15px}.royal-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}.gallery-section{padding-top:38px;padding-bottom:42px}.gallery-heading h2{font-size:38px}.gallery-heading p{font-size:15px}.royal-gallery figcaption{font-size:14px}.closing-note{padding-top:25px;padding-bottom:50px}.photo-dialog{padding-top:45px}.staff-note{padding:24px 21px}.article .staff-note h2{font-size:26px}}
+@media(max-width:480px){.magazine-sidebar{display:flex;gap:24px}.author-photo{height:230px;object-position:80% 45%}.author-card{padding:26px}.author-card p{font-size:14px}.author-card h2{font-size:33px}.sidebar-note{padding:25px}.sidebar-recent{display:none}.journal .section-head{gap:7px}.journal .section-head h2{font-size:33px}.royal-quote blockquote{font-size:22px}.royal-hero .wrap{padding:0 23px}.main-nav a{padding-left:10px;padding-right:10px}}
+@media(prefers-reduced-motion:reduce){.magazine .art img{transition:none}.magazine .card:hover .art img{transform:none}}
