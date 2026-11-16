@@ -61,3 +61,13 @@ h1,h2,h3,.brand{color:var(--accent)}
 .card:hover .art img{transform:scale(1.035)}
 @media(max-width:750px){.hero{min-height:660px;padding-top:250px;padding-bottom:48px}.hero-photo{height:340px;inset:0 0 auto}.hero-photo img{object-position:75% 40%}.hero::after{background:linear-gradient(0deg,#080808 0%,#080808 47%,#08080855 65%,transparent 85%)}.hero h1{max-width:600px;font-size:clamp(40px,8vw,56px)}.hero .lead{font-size:18px}.art{max-height:none}}
 @media(prefers-reduced-motion:reduce){.art img{transition:none}.card:hover .art img{transform:none}}
+
+/* Życie kociego influencera */
+.hero-signature{font-size:12px;color:var(--muted);max-width:470px;margin-top:24px;letter-spacing:.4px}
+.hero h1{font-size:clamp(42px,5.3vw,66px);max-width:700px}
+.read-story{display:block;color:var(--accent);font-size:13px;font-weight:650;margin-top:22px}
+.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card h3{font-size:30px;line-height:1.2}
+.story-photo{margin:32px 0 38px}.story-photo img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;aspect-ratio:3/2;object-fit:cover}
+.story-photo figcaption{font-size:12px;color:var(--muted);line-height:1.6;margin-top:10px}
+@media(max-width:750px){.cards{grid-template-columns:1fr}.hero{padding-top:260px}.hero h1{font-size:clamp(40px,8vw,56px)}.card h3{font-size:27px}.hero-signature{max-width:340px}.about h2{font-size:32px}}
