@@ -24,3 +24,26 @@ h3{font-size:26px}
 .about h2{margin-top:8px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card,.button{transition:none}.card:hover{transform:none}}
 @media(max-width:750px){.about{padding:26px 24px}}
+
+/* Koci notatnik: czerń, złote tytuły, lekka i czytelna treść */
+:root{--bg:#080808;--ink:#eeeae3;--accent:#d8b875}
+body{font-weight:400}
+h1,h2,h3,.brand{color:var(--accent)}
+.hero{background:radial-gradient(ellipse at 90% 20%,#201b12 0,transparent 52%),#080808}
+.hero h1{max-width:980px;font-size:clamp(42px,6.7vw,78px)}
+.lead{font-size:20px;line-height:1.85;max-width:720px;color:#ddd7cd}
+.article{max-width:800px}
+.article h1{font-size:clamp(38px,5.5vw,62px);overflow-wrap:break-word}
+.article p,.article li,.article dd{line-height:1.9}
+.article .intro{color:#eee7db;font-family:Georgia,"Times New Roman",serif;font-size:23px;line-height:1.75}
+.article a{text-underline-offset:4px;text-decoration-color:#8a744d}
+.article dt{font-size:19px;font-weight:600;color:var(--accent);margin-top:24px}
+.article dd{margin:8px 0 22px;color:var(--ink);font-size:18px}
+.editor-note{border-top:1px solid var(--line);margin-top:48px;padding-top:14px;color:var(--muted)}
+.editor-note h2,.related h2{font-size:26px}
+.editor-note p,.editor-note li{font-size:14px}
+.related{display:block;border-top:1px solid var(--line);margin-top:36px;padding-top:14px}
+.related a{font-size:17px;font-weight:400}
+.related ul{padding-left:22px}
+.section-head h2{max-width:720px}
+@media(max-width:750px){.section-head{align-items:flex-start;flex-direction:column}.hero{padding:58px 0 64px}.lead{font-size:18px}.article{padding-top:42px}.article .intro{font-size:21px}.article p,.article li,.article dd{font-size:17px}}
